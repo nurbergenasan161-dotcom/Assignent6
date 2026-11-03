@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 6 · The Birthday Mystery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div><span class="eyebrow">AITU · ASSIGNMENT 06</span><h1>The Birthday Mystery <span>🎂</span></h1><p>21 guests. Four rooms. One missing cake. Use jQuery to investigate.</p></div>
+      <div class="hero-stats"><b>19:30–22:30</b><small>THE PARTY</small></div>
+    </header>
+    <div class="toolbar"><span class="step-title">01 / Selector detective</span><button id="clear" class="secondary">Clear highlights</button><button id="reset" class="secondary">Reset party</button></div>
+    <section id="cases" class="cases" aria-label="20 investigation cases"></section>
+    <div class="result" id="result" role="status" aria-live="polite"><strong>Choose a case</strong><span>Click any question above to reveal the matching guests or rooms.</span></div>
+    <section class="house" id="house" aria-label="The party house"><div class="roof"><span>THE PARTY HOUSE</span></div><div id="floors"></div><div class="house-base"></div></section>
+    <footer class="legend"><span><i class="dot red"></i>Red</span><span><i class="dot blue"></i>Blue</span><span><i class="dot green"></i>Green</span><span><i class="dot black"></i>Black</span><span><i class="dot yellow"></i>Yellow</span><span><i class="dot purple"></i>Purple</span><span>📱 Phone</span><span>👓 Glasses</span><span>👜 Bag</span><span>☕ Cup</span><span>🍰 Crumbs</span><span>🎓 AITU</span></footer>
+    <p class="hint">Task 1: use the case buttons to solve all 20 selector questions with jQuery.</p>
+  </main>
+  <div id="modalShade" class="shade" aria-hidden="true"></div><div id="guestDialog" class="guest-dialog" role="dialog" aria-modal="true" aria-label="Guest details" tabindex="-1"></div>
+</body>
+</html>
